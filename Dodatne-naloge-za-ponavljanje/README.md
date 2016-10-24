@@ -29,3 +29,50 @@ Primer zapisa naj bo:
 3 | 1 | 0:0:1
 ... | ... | ...
 25 | 1705112 | 28:25:112
+
+## 3. Naloga
+Podan imamo postopek kodiranja besed. Za predstavljen algoritem velja, da zakodira besedo, sestavljeno iz samih velikih črk, ostalih znakov na vhodu ne pričakuje in jih zato ni potrebno obravnavati.
+
+Kodiranje pričnemo na začetku besede. Vzamemo par znakov in s prvim znakom zakodiramo drugega. Vrstni red znakov je enak kot v angleški abecedi, šteti pa začnemo z 0:
+```
+A = 0
+B = 1
+...
+Z = 25
+```
+Kodirati začnemo vedno od začetka besede. Prvi znak v besedi ostane nespremenjen. Ostale znake zakodiramo tako, da vzamemo par znakov znakov in s prvim zakodiramo drugega tako, da njegovi zaporedni številki prištejemo zaporedno številko prvega znaka (glej primer). V kolikor je vsota zunaj obsega abecede, upoštevamo ostanek pri deljenju s številom znakov v abecedi (v našem primeru jih je 26). V naslednjem koraku vzamemo naslednji par znakov, pri čemer moramo upoštevati, da smo enega že zakodirali in takšnega tudi uporabimo. 
+
+Dopolnite spodnji program tako, da definirate vse tri prazne metode, ki morajo ustrezati opisanemu postopku kodiranja.
+```java
+public class NalogaKodiranje {
+  public static void main(String[] args) {
+    String original = "SKRIVNOST";
+    System.out.println(original);
+    System.out.println(rekurzivnoKodiraj(original));
+    System.out.println(iterativnoKodiraj(original));
+  }
+
+  /* Metoda kot vhod prejme dva znaka in vrne znak vhod, zakodiran z znakom kljuc */
+  private static char kodiraj(char kljuc, char vhod) {
+    //Vpiši kodo tukaj
+  }
+
+  /* Metoda kot vhod prejme niz in ga rekurzivno zakodira s pomočjo metode kodiraj */
+  private static String rekurzivnoKodiraj(String niz) {
+    //Vpiši kodo tukaj
+  }
+
+  /* Metoda kot vhod prejme niz in ga iterativno zakodira s pomočjo metode kodiraj */
+  private static String iterativnoKodiraj(String niz) {
+    //Vpiši kodo tukaj
+  }
+}
+```
+
+Primeri izpisov:
+
+`SKRIVNOST` -> `SCTBWJXPI`
+
+`PROGRAMIRANJE` -> `PGUARRDLCCPYC`
+
+`ALGORITEM` -> `ALRFWEXBN`
