@@ -102,4 +102,26 @@ Elvira
 Sandra
 Miran
 ```
-Rezultat zgornjega primera: `E. N.` 
+Rezultat zgornjega primera: `E. N.`
+
+
+## 10. Naloga
+Z uporabo rekurzije napiši metodo za ugotavljanje palindroma.
+
+Namig: Niz je palindrom, če je prva črka enaka zadnji in je srednji niz (to je niz brez prve in zadnje črke) palindrom.
+
+Glava metode jePalindrom naj ima naslednjo obliko:
+`public static boolean jePalindrom(String niz)`
+
+Metodo uporabi pri preverjanje imen v datoteki `palindromi.txt`.
+
+Vsebina datoteke `palindromi.txt`
+```
+aba
+banana
+ninanana
+juhubanda
+pericarezeracirep
+bob
+metla
+```
