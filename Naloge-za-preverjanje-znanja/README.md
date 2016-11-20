@@ -125,3 +125,15 @@ pericarezeracirep
 bob
 metla
 ```
+
+
+## 15. Naloga
+Napiši metodo, ki prebere celo število. V primeru, da uporabnik ne vnese celega števila naj bo opozorjen, da ni vnesel celega števila in naj le to vnese. Program naj se izvaja toliko časa dokler uporabnik ne vnese celega števila. Upoštevaj lovljenje izjem.
+
+
+## 16. Naloga
+Napiši program, ki bere vsebino datoteke in izpisuje vsebino vrstico po vrstico na zaslon. Upoštevaj dve uporabniki napaki in sicer:
+* Uporabnik ne poda imena datoteke (argument pri klicu)
+* Uporabnik poda ime datoteke vendar le ta ne obstaja.
+
+V programu naj se vedno izvede blok v katerem se izpiše vsebina `"Ta program vsebuje lovljenje izjem!"` 
