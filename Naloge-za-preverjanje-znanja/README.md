@@ -127,6 +127,71 @@ metla
 ```
 
 
+## 11. Naloga
+Napiši program za izbiro najljubšega hišnega ljubljenčka. Deklariraj naštevni tip *HisniLjubljencki*. Program naj najprej izpiše vse hišne ljubljenčke, ki so na izbiro, nato pa uporabnik izmed naštetih izbere (napiše) poljubnega. Upoštevaj to, da lahko uporabnik piše z malimi in velikimi črkami, program naj upošteva tudi nepravilno uporabo (nepravilen vnos).
+
+Na voljo imate sledeče hišne ljubljenčke: *macek*, *papiga*, *hrcek*, *kaca*, *kuza*, *tiger*.
+
+
+## 12. Naloga
+Napiši program `Dnevi`, ki vsebuje naštevni tip z vsemi dnevi v tednu, poleg tega izdelaj metodo `vzdusje`, ki za ponedeljek izpiše `"Ponedeljki mi niso vsec."`, za petek `"Petki so vredu."`, za soboto in nedeljo `"Vikendi so najboljsi."`, za ostale dneve pa `"Med tednom je tako-tako."`. Napiši tudi konstruktor s parametrom `dan`, ki nastavi vrednost spremenljivke dan (ime konstruktorja je enako imenu razreda). V glavni metodi uporabi izdelan konstruktor in metodo *vzdusje*. 
+
+
+## 13. Naloga
+Izdelaj razred `Dijak`, ki vsebuje naslednje parametre:
+```java
+private String ime, priimek, predmet;
+private int ocena;
+```
+
+Izdelaj metode za dostop do imena, priimka, predmeta in ocene.
+```java
+String vrniIme()
+String vrniPriimek()
+int vrniOceno()
+```
+
+Izdelaj konstruktor, ki za parameter vzame ime, priimek, predmet in oceno in naredi razred s temi parametri.
+```java
+Dijak(String i, String p, String pre, int o);
+```
+Izdelaj metodo: `public String toString()`, ki vrne niz, v katerem so napisani ime, priimek in ocena dijaka.
+
+Izdelaj razred **TestDijak**, ki naredi tabelo petih objektov tipa dijak, vnese ime, priimek in oceno za vsakega. Bodi pozoren na to, da je potrebno najprej z operatorjem new izdelati tabelo objektov tipa dijak, potem pa za vsak indeks narediti nov objekt tipa dijak. Dodaj razredu TestDijak naslednje metode `public static double povprecnaOcena(Dijaki[] dijaki)`, ki kot parameter vzame tabelo dijakov in vrne povprečno oceno dijakov.
+
+## 14. Naloga
+Izdelaj razred `Dijak`, ki vsebuje naslednje parametre:
+```java
+private String ime, priimek, predmet;
+private int ocena;
+```
+
+Izdelaj metode za dostop do imena, priimka, predmeta in ocene.
+```java
+String vrniIme()
+String vrniPriimek()
+int vrniOceno()
+```
+
+Izdelaj konstruktor, ki za parameter vzame ime, priimek, predmet in oceno in naredi razred s temi parametri.
+```java
+Dijak(String i, String p, String pre, int o);
+```
+Izdelaj metodo: `public String toString()`, ki vrne niz, v katerem so napisani ime, priimek in ocena dijaka.
+
+Izdelaj razred **TestDijak**, ki naredi tabelo petih objektov tipa dijak, vnese ime, priimek in oceno za vsakega. Bodi pozoren na to, da je potrebno najprej z operatorjem new izdelati tabelo objektov tipa dijak, potem pa za vsak indeks narediti nov objekt tipa dijak. Dodaj razredu TestDijak naslednje metode `public static double povprecnaOcena(Dijaki[] dijaki)`, ki kot parameter vzame tabelo dijakov in vrne povprečno oceno dijakov.
+
+Izdelaj razred **TestDijak**, ki naredi tabelo desetih objektov tipa dijak. Podatke o dijakih preberi iz datoteke in vsebino vpiši v tabelo. V datoteki naj bodo podatki za 10 dijakov. Podatki o dijaku naj bodo ločeni z vejico.
+
+Struktura datoteke:
+```
+Marko,Petek,APJ,4
+Miha,Sobota,MAT,4
+Janez,Rutar,SLO,2
+...
+```
+
+
 ## 15. Naloga
 Napiši metodo, ki prebere celo število. V primeru, da uporabnik ne vnese celega števila naj bo opozorjen, da ni vnesel celega števila in naj le to vnese. Program naj se izvaja toliko časa dokler uporabnik ne vnese celega števila. Upoštevaj lovljenje izjem.
 
@@ -137,3 +202,14 @@ Napiši program, ki bere vsebino datoteke in izpisuje vsebino vrstico po vrstico
 * Uporabnik poda ime datoteke vendar le ta ne obstaja.
 
 V programu naj se vedno izvede blok v katerem se izpiše vsebina `"Ta program vsebuje lovljenje izjem!"` 
+
+
+## 18. Naloga
+Napišite program, ki bo omogočal vnos poljubnega števila moških imen.
+Za hranjenje moških imen uporabi razred *ArrayList*. Na 3. mesto vnesi moško ime **Dani**. Na podlagi zadnjih črk vnesenih imen sestavi žensko ime in jo vstavi v drugi ArrayList. Generiraj naključno število s katerim izbereš moškega iz prvega Arraylista. Izpiši ime naključnega "moža" in "žene". Za ime žene uporabi sestavljeno ime na podlagi zadnjih črk vnesenih imen. Izpiši tudi število vseh moških in dolžino ženskega imena.
+
+Primer izpisa:
+```
+Ime moža je Tone ime žene pa Anica.
+Število vseh moških v ArrayList-u je 5, dolžina imena Anica pa je prav tako 5. 
+```
