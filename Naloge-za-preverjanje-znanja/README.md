@@ -203,6 +203,59 @@ Napiši program, ki bere vsebino datoteke in izpisuje vsebino vrstico po vrstico
 
 V programu naj se vedno izvede blok v katerem se izpiše vsebina `"Ta program vsebuje lovljenje izjem!"` 
 
+## 17. Naloga
+Napiši program, ki vsebuje tabelo 10000 elementov tipa byte. Napiši vse tri metode za urejanje podatkov (izbiranje, premene, vstavljanje). Napiši metodo, ki izpiše, koliko časa je trajalo določeno urejanje v primeru:
+* ko je tabela napolnjena z naključnimi podatki iz intervala [1..200]
+* ko je tabela napolnjena s podatki, ki so že urejeni v naraščajočem vrstnem redu
+* ko je tabela napolnjena s podatki, urejenimi v padajočem vrstnem redu
+
+Primerjajte hitrosti metod!
+```java
+public static void urejanjeVstavljanje(Element[] a) {
+	int i, j;
+	Element x;
+	for(i=1; i<a.length; i++){
+		if(a[i]>a[i-1])
+			continue; //izboljšava
+		x=a[i];
+		j=i-1;
+		while(j>=0 && x<(a[j])){
+			a[j+1]=a[j];
+			j--;
+		}
+		a[j+1]=x;
+	}
+}
+
+public static void uredi_z_izbiranjem(Element[] a) {
+	int j,
+	Element t;
+	for (int i = 0; i < a.length-1; i = i + 1) {
+		j = i;
+		for (int k = i; k < a.length; k = k + 1) {
+			if (a[k] < a[j]) {
+				j = k;
+			}
+		}
+		t = a[i];
+		a[i] = a[j];
+		a[j] = t;
+	}
+}
+
+public static void bubbleSort(Element[] a) {
+	int i,j;
+	Element x;
+	for(i=1; i<a.length; ++i)
+		for(j=a.length-1; j>=i; --j)
+			if(a[j]<(a[j-1])){
+				x=a[j];
+				a[j]=a[j-1];
+				a[j-1]=x;
+			}
+}
+```
+
 
 ## 18. Naloga
 Napišite program, ki bo omogočal vnos poljubnega števila moških imen.
@@ -212,4 +265,71 @@ Primer izpisa:
 ```
 Ime moža je Tone ime žene pa Anica.
 Število vseh moških v ArrayList-u je 5, dolžina imena Anica pa je prav tako 5. 
+```
+
+
+## 19. Naloga
+Sestavi razred Pacient, ki ima tri komponente:
+* ime,
+* priimek,
+* krvna skupina.
+
+Komponenti ime in priimek naj bosta javni, krvna skupina pa privatna. Vse komponente naj bodo tipa *String*. Napiši dva konstruktorja:
+* prazen konstruktor, ki vse tri komponente nastavi na `"NI PODATKOV"`;
+* konstruktor, ki sprejme vse tri podatke in ustrezno nastavi komponente.
+
+Popravi tudi standardno metodo za pretvorbo v niz (`toString` oz. `ToString`), ki naj izpiše podatke o pacientu (ime, priimek, krvna skupina).
+
+Izdelaj razred *TestPacient*, ki naredi tabelo tridesetih objektov tipa pacient, vnese ime, priimek in krvno skupino za vsakega. 
+
+
+## [20. Naloga](https://github.com/drobilc/NRP/blob/master/Naloge-ArrayList/Naloga02.java)
+Podan imamo razred *Sola*. Izdelaj razred *ArrayListDemo*, kjer v ArrayList, velikosti 20 vstaviš sledeče podatke:
+```
+TSC_NG, Tigri
+Gimnazija_NG, Kanarcki
+Ekonomska_NG, Medvedi
+TSC_KR, Carovniki
+Gimnazija_Siska, RdeceSence
+```
+
+* Na tretje mesto v ArrayList-u vstavi podatke o Srednji šoli za elektrotehniko in računalništvo v Ljubljani
+`Vegova, Rusilci`
+* Vse podatke v ArrayList-u izpiši s pomočjo »for each« stavka.
+* Uredi podatke v padajočem vrstnem redu po imenu šol in jih izpiši v nasprotnem vrstnem redu s pomočjo *while zanke*.
+* Pobriši šolo, ki se nahaja na 2 mestu v ArrayList-u in izpiši vse podatke s pomočjo *for stavka*. 
+
+```java
+class Sola{
+  private String sola;
+  private String ekipa;
+
+  public Sola() {
+  }
+
+  public Sola(String sola, String ekipa) {
+    this.sola = sola;
+    this.ekipa = ekipa;
+  }
+
+  public String getSola() {
+    return sola;
+  }
+
+  public void setSola(String sola) {
+    this.sola = sola;
+  }
+
+  public String getEkipa() {
+    return ekipa;
+  }
+ 
+  public void setEkipa(String ekipa) {
+    this.ekipa = ekipa;
+  }
+
+  public String toString() {
+    return "## sola : "+this.sola+", ekipa : "+this.ekipa;
+  }
+}
 ```
