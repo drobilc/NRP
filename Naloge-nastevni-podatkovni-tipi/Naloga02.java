@@ -1,9 +1,3 @@
-/*Napiöi program za izbiro najljuböega OS. Deklariraj naötevni tip OperacijskiSistemi.
-Program naj najprej izpiöe vse operacijske sisteme, ki so na izbiro, nato pa uporabnik
-izmed naötetih izbere(napiöe) poljubnega. Upoötevaj to, da lahko uporabnik piöe z
-malimi in velikimi Ërkami. Program naj upoöteva tudi nepravilno uporabo (nepravilen
-vnos). */
-
 import java.util.*;
 
 public class Naloga02 {
@@ -13,7 +7,7 @@ public class Naloga02 {
 	
 	public static void main(String[] args) {
 		
-		//Izpiöemo vse moûne OS iz naötevnega podatkovnega tipa OperacijskiSistem
+		//Izpi≈°emo vse mo≈æne OS iz na≈°tevnega podatkovnega tipa OperacijskiSistem
 		System.out.println("Vsi mozni operacijski sistemi: ");
 		for (OperacijskiSistem os : OperacijskiSistem.values()) {
 			System.out.println(os);
