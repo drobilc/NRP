@@ -21,7 +21,7 @@ public class Naloga05 {
 		System.out.println(varcevalec2);
 		
 		//Spremenimo letno obrestno mero (ker je staticna, se spremeni obema varcevalcema)
-		varcevalec1.spremeniObrestnoMero(4);
+		VarcevalniRacun.spremeniObrestnoMero(4);
 		
 		//Vsakemu varcevalcu dodamo pripisemo mesecne obresti
 		varcevalec1.izracunMesecnihObresti();
@@ -33,7 +33,7 @@ public class Naloga05 {
 		System.out.println(varcevalec2);
 		
 		//Spremenimo letno obrestno mero (ker je staticna, se spremeni obema varcevalcema)
-		varcevalec2.spremeniObrestnoMero(5);
+		VarcevalniRacun.spremeniObrestnoMero(5);
 		
 		//Vsakemu varcevalcu dodamo pripisemo mesecne obresti
 		varcevalec1.izracunMesecnihObresti();
