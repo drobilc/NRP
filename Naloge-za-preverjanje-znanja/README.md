@@ -256,6 +256,7 @@ public static void bubbleSort(Element[] a) {
 }
 ```
 
+Naloga je sicer rešena z uporabo razreda *Timer* (glej `Timer.java`), ki je dostopen na učilnici, a so metode za sortiranje moje. Pri uporabi zgornjih metod je potrebno `Element` spremeniti v vaš podatkovni tip (v mojem primeru je to podatkovni tip `byte`).
 
 ## 18. Naloga
 Napišite program, ki bo omogočal vnos poljubnega števila moških imen.
