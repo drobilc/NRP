@@ -127,13 +127,13 @@ metla
 ```
 
 
-## 11. Naloga
+## [11. Naloga](https://github.com/drobilc/NRP/blob/master/Naloge-nastevni-podatkovni-tipi/Naloga02.java)
 Napiši program za izbiro najljubšega hišnega ljubljenčka. Deklariraj naštevni tip *HisniLjubljencki*. Program naj najprej izpiše vse hišne ljubljenčke, ki so na izbiro, nato pa uporabnik izmed naštetih izbere (napiše) poljubnega. Upoštevaj to, da lahko uporabnik piše z malimi in velikimi črkami, program naj upošteva tudi nepravilno uporabo (nepravilen vnos).
 
 Na voljo imate sledeče hišne ljubljenčke: *macek*, *papiga*, *hrcek*, *kaca*, *kuza*, *tiger*.
 
 
-## 12. Naloga
+## [12. Naloga](https://github.com/drobilc/NRP/blob/master/Naloge-nastevni-podatkovni-tipi/Naloga03.java)
 Napiši program `Dnevi`, ki vsebuje naštevni tip z vsemi dnevi v tednu, poleg tega izdelaj metodo `vzdusje`, ki za ponedeljek izpiše `"Ponedeljki mi niso vsec."`, za petek `"Petki so vredu."`, za soboto in nedeljo `"Vikendi so najboljsi."`, za ostale dneve pa `"Med tednom je tako-tako."`. Napiši tudi konstruktor s parametrom `dan`, ki nastavi vrednost spremenljivke dan (ime konstruktorja je enako imenu razreda). V glavni metodi uporabi izdelan konstruktor in metodo *vzdusje*. 
 
 
